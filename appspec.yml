@@ -1,4 +1,3 @@
-Create an appspec.yml file at the root of your forked repo:
 version: 0.0
 os: linux
 files:
