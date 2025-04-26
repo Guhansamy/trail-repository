@@ -1,0 +1,11 @@
+Create an appspec.yml file at the root of your forked repo:
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+hooks:
+  AfterInstall:
+    - location: deploy-scripts/install.sh
+      timeout: 180
+      runas: root
